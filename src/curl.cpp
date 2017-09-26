@@ -3011,7 +3011,7 @@ int S3fsCurl::ListBucketRequest(const char* tpath, const char* query)
 //
 // Example :
 //   POST /example-object?uploads HTTP/1.1
-//   Host: example-bucket.s3.amazonaws.com
+//   Host: example-bucket.obs.myhwclouds.com
 //   Date: Mon, 1 Nov 2010 20:34:56 GMT
 //   Authorization: AWS VGhpcyBtZXNzYWdlIHNpZ25lZCBieSBlbHZpbmc=
 //
@@ -3339,13 +3339,13 @@ int S3fsCurl::AbortMultipartUpload(const char* tpath, string& upload_id)
 
 //
 // PUT /ObjectName?partNumber=PartNumber&uploadId=UploadId HTTP/1.1
-// Host: BucketName.s3.amazonaws.com
+// Host: BucketName.obs.myhwclouds.com
 // Date: date
 // Content-Length: Size
 // Authorization: Signature
 //
 // PUT /my-movie.m2ts?partNumber=1&uploadId=VCVsb2FkIElEIGZvciBlbZZpbmcncyBteS1tb3ZpZS5tMnRzIHVwbG9hZR HTTP/1.1
-// Host: example-bucket.s3.amazonaws.com
+// Host: example-bucket.obs.myhwclouds.com
 // Date:  Mon, 1 Nov 2010 20:34:56 GMT
 // Content-Length: 10485760
 // Content-MD5: pUNXr/BjKK5G2UKvaRRrOA==

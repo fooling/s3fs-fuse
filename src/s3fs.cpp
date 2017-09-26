@@ -91,9 +91,9 @@ bool pathrequeststyle             = false;
 bool complement_stat              = false;
 std::string program_name;
 std::string service_path          = "/";
-std::string host                  = "https://s3.amazonaws.com";
+std::string host                  = "https://obs.myhwclouds.com";
 std::string bucket                = "";
-std::string endpoint              = "us-east-1";
+std::string endpoint              = "cn-north-1";
 std::string cipher_suites         = "";
 s3fs_log_level debug_level        = S3FS_LOG_CRIT;
 const char*    s3fs_log_nest[S3FS_LOG_NEST_MAX] = {"", "  ", "    ", "      "};
@@ -885,7 +885,7 @@ static int do_create_bucket(void)
 
   FILE* ptmpfp;
   int   tmpfd;
-  if(endpoint == "us-east-1"){
+  if(endpoint == "cn-north-1"){
     ptmpfp = NULL;
     tmpfd = -1;
   }else{
@@ -3706,7 +3706,7 @@ static int s3fs_utility_mode(void)
 //
 // If calling with wrong region, s3fs gets following error body as 400 error code.
 // "<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is 
-//  malformed; the region 'us-east-1' is wrong; expecting 'ap-northeast-1'</Message>
+//  malformed; the region 'cn-north-1' is wrong; expecting 'ap-northeast-1'</Message>
 //  <Region>ap-northeast-1</Region><RequestId>...</RequestId><HostId>...</HostId>
 //  </Error>"
 //
