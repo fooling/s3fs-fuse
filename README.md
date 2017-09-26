@@ -1,7 +1,7 @@
 s3fs
 ====
 
-s3fs allows Linux and Mac OS X to mount an S3 bucket via FUSE.
+s3fs allows Linux and Mac OS X to mount a OBS bucket via FUSE.
 s3fs preserves the native object format for files, allowing use of other tools like [s3cmd](http://s3tools.org/s3cmd).  
 [![Build Status](https://travis-ci.org/s3fs-fuse/s3fs-fuse.svg?branch=master)](https://travis-ci.org/s3fs-fuse/s3fs-fuse)
 
@@ -9,7 +9,7 @@ Features
 --------
 
 * large subset of POSIX including reading/writing files, directories, symlinks, mode, uid/gid, and extended attributes
-* compatible with Amazon S3, Google Cloud Storage, and other S3-based object stores
+* compatible with Huawei OBS, Amazon S3, Google Cloud Storage, and other S3-based object stores
 * large files via multi-part upload
 * renames via server-side copy
 * optional server-side encryption
